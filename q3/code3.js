@@ -18,6 +18,11 @@ function addList() {
 function delList() {
     $(this).parent(".item").remove();
     localStorage.setItem("lista", $(".list").html());
+
+    $(".list").on("change", "input[type='checkbox']", function() {
+        $(this).attr("checked", this.checked);
+        localStorage.setItem("lista", $(".list").html());
+    });
 }
 
 
