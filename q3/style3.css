@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #142d4c;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: min(90vw, 20rem);
+    height: min(90vh, 40rem);
+    border-radius: 30px;
+    background-color: #385170;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    padding: 20px;
+    height: 70px;
+    width: 100%;
+    background-color: #ececec;
+    box-sizing: border-box;
+    gap: 10px;
+}
+
+.navbar h1 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.taskName {
+    display: flex;
+    text-align: center;
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+    border: 2px solid #142d4c;
+    border-radius: 5px;
+    background-color: #ececec;
+    cursor: text;
+    box-sizing: border-box;
+}
+
+.create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #142d4c;
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    width: 80%;
+    margin: 10px 0;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #c2c0f7;
+}
+
+.item input {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #142d4c;
+    border-radius: 50%;
+    background-color: #ececec;
+    cursor: pointer;
+}
+
+.item input:checked {
+    background-color: #142d4c;
+    border-color: #385170;
+}
+
+.item input:checked::after {
+    content: "✓";
+    color: white;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.del {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    width: 30px;
+    height: 30px;
+    color: #142d4c;
+    cursor: pointer;
+}
