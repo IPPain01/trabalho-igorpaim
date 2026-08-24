@@ -12,7 +12,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    width: min(90vw, 20rem);
+    width: min(90vw, 600px);
     height: min(90vh, 40rem);
     border-radius: 30px;
     background-color: #385170;
@@ -66,7 +66,7 @@ body {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .item {
@@ -80,6 +80,12 @@ body {
     border-radius: 15px;
     box-sizing: border-box;
     background-color: #c2c0f7;
+}
+
+.item h3 {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
 }
 
 .item input {
@@ -105,6 +111,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+
+.item .date{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 20px;
+    margin-left: auto;
+    border: 2px solid #142d4c;
+    border-radius: 5px;
+    background-color: #ececec;
+    box-sizing: border-box;
 }
 
 .del {
