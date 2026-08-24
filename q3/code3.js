@@ -1,3 +1,4 @@
+//Funções
 function addList() {
     const title = $(".taskName").val().trim();
 
